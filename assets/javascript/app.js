@@ -26,7 +26,7 @@ $(document).ready(function(){
       q7: "What year did the Coyotes rebrand from the Phoenix Coyotes to the Arizona Coyotes?"
     },
     options: {
-      q1: ['Eckman-Larsson', 'Kessel', 'Raanta', 'Doan'],
+      q1: ['Ekman-Larsson', 'Kessel', 'Raanta', 'Doan'],
       q2: ['Gritty', 'Howler', 'Youppi', 'Nordy'],
       q3: ['Rangers', 'Jets', 'Flames', 'Kings'],
       q4: ['Keith Tkachuck', 'Shane Doan', 'Phil Kessel', 'Wayne Gretzky'],
@@ -35,7 +35,7 @@ $(document).ready(function(){
       q7: ['2003', '2014', '1993','2020']
     },
     answers: {
-      q1: 'Eckman-Larsson',
+      q1: 'Ekman-Larsson',
       q2: 'Howler',
       q3: 'Jets',
       q4: 'Shane Doan',
