@@ -1,13 +1,17 @@
 body{
-    background-image: url;
+    background-image: url("../images/image1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     text-align: center;
 }
+
 
 
 .last-seconds{
   color: red;
 }
-.option{
-  margin: 15px;
-}
 
+.option{
+    margin: 15px;
+  }
