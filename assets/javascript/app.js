@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
   
-    // event listeners
     $("#remaining-time").hide();
     $("#start").on('click', triviaGame.startGame);
     $(document).on('click' , '.option', triviaGame.guessChecker);
@@ -97,16 +96,15 @@ $(document).ready(function(){
         triviaGame.result = false;
         clearInterval(triviaGame.timerId);
         resultId = setTimeout(triviaGame.guessResult, 1000);
-        $('#results').html('<h3>Out of time! The answer was '+ Object.values(triviaGame.answers)[triviaGame.currentSet] +'</h3>');
-      }
-      else if(triviaGame.currentSet === Object.keys(triviaGame.questions).length){
+        $('#results').html('<h3>Out of time! The correct answer was '+ Object.values(triviaGame.answers)[triviaGame.currentSet] +'</h3>');
+      } else if(triviaGame.currentSet === Object.keys(triviaGame.questions).length){
         
         $('#results')
           .html('<h3>Thank you for playing!</h3>'+
           '<p>Correct: '+ triviaGame.correct +'</p>'+
           '<p>Incorrect: '+ triviaGame.incorrect +'</p>'+
           '<p>Unanswered: '+ triviaGame.unanswered +'</p>'+
-          '<p>Start Over?</p>');
+          '<p>Play Again?</p>');
         
         $('#game').hide();
         
