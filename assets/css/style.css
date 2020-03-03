@@ -6,7 +6,16 @@ body{
     text-align: center;
 }
 
-
+#start{
+  display: block;
+width: 50%;
+height: 20%;
+margin:0 auto;
+font-size: 30px;
+background-color: blue;
+border: 0px;
+color: white; 
+}
 
 .last-seconds{
   color: red;
